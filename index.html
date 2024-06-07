@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <!-- style  -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container text-center mb-5">
+        <div class="m-auto w-75 mt-5 pt-5 pb-5 ">
+                    <!-- Registration Page -->
+            <div id="register-page" class="page active box p-4 ">
+                <h1 class="mb-5 mt-2">Smart Login System</h1>
+                <input type="text" id="register-name"  class="w-100 rounded  px-3 py-2 form-control my-4" placeholder="Enter your name">
+                <input type="email" id="register-email" class="w-100 rounded px-3 py-2 form-control my-4" placeholder="Enter your email" >
+                <input type="password" id="register-password" class="w-100 rounded px-3 py-2 form-control my-4"  placeholder="Enter your password" >
+                <button id="register-button" class="w-100 rounded px-3 py-2 form-control my-4 btn btn-outline-info mb-3 my-1">Register</button>
+                <p id="register-error-message" class="error-message">Invalid input. Please try again.</p>
+                <p class="text-white mt-3 mb-4">You have an account ? <button id="go-to-login" class="bg-transparent ps-2">SignIn</button></p>
+            </div>
+
+            <!-- Login Page -->
+
+            <div id="login-page" class="page box p-4 ">
+                <h1 class="mb-5 mt-2">Smart Login System</h1>
+                <input type="email" id="login-email" class="w-100 rounded px-3 py-2 form-control" placeholder="Enter your email" ><br>
+                <input type="password" id="login-password" class="w-100 rounded px-3 py-2 form-control" placeholder="Enter your password" ><br>
+                <button id="login-button" class="w-100 rounded px-3 py-2 form-control btn btn-outline-info mb-3 my-1">Login</button>
+                <p id="login-error-message" class="error-message">Invalid email or password. Please try again.</p>
+                <p class="text-white mt-3 mb-4">Don't have an account ? <button id="go-to-register" class="bg-transparent ps-2" >Sign Up</button></p>
+            </div>
+        </div>
+
+
+           <!-- Home Page -->
+            
+
+        <div id="home-page" class="page">
+            <div class=" mb-5 box px-3  py-3 rounded">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <h4 class="my-auto text-white" >SMART LOGIN</h4>
+                    <button id="logout-button" class="my-auto btn btn-outline-warning">Logout</button>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 box p-4 rounded mt-4 ">
+                <h1>Welcome <span id="user-name"></span></h1>
+            </div>
+        </div>
+       
+    </div>
+   
+
+    <script src="js/index.js"></script>
+</body>
+</html>
